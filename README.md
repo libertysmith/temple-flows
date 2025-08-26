@@ -1,73 +1,118 @@
-# Welcome to your Lovable project
+# Temple Pilates - Static Marketing Website
 
-## Project info
+A beautiful, responsive marketing website for Temple Pilates, built with React and Tailwind CSS. Features beat-driven Pilates and breath-led Yoga classes in a modern sanctuary design.
 
-**URL**: https://lovable.dev/projects/e52668e3-90fd-48aa-8bf4-a161b821e953
+## 🌟 Features
 
-## How can I edit this code?
+- **Responsive Design**: Mobile-first, responsive design that works beautifully on all devices
+- **Hero Video**: Full-bleed background video with overlay and call-to-action
+- **SEO Optimized**: Complete meta tags, Open Graph, Twitter cards, and JSON-LD structured data
+- **Accessibility**: WCAG AA compliant with proper focus states and alt text
+- **Fast Performance**: Optimized images, lazy loading, and efficient code
+- **Modern Stack**: Built with React, Tailwind CSS, and TypeScript
 
-There are several ways of editing your application.
+## 🎨 Design System
 
-**Use Lovable**
+The site uses Temple Pilates' exact brand colors:
+- **Primary**: #FAF3DD (base backgrounds)
+- **Secondary**: #D7BDBE (section panels) 
+- **Ink**: #615055 (headings/body text)
+- **Accent Green**: #62A87C (primary buttons/links)
+- **Accent Gold**: #E9C46A (outlines/dividers/hover accents)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e52668e3-90fd-48aa-8bf4-a161b821e953) and start prompting.
+## 📄 Pages
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Homepage** (`/`) - Hero video, class descriptions, community info
+- **Class Formats** (`/formats`) - Detailed Mat Pilates and Yoga information
+- **Schedule** (`/schedule`) - Booking system integration placeholders
+- **Membership** (`/membership`) - Pricing plans and policies
+- **About** (`/about`) - Studio story, values, and instructor bios
+- **FAQ** (`/faq`) - Comprehensive Q&A and community guidelines
 
-**Use your preferred IDE**
+## 🚀 Deployment to GitHub Pages
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+This site is ready for GitHub Pages deployment:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Build the site**:
+   ```bash
+   npm run build
+   ```
 
-Follow these steps:
+2. **Deploy to GitHub Pages**:
+   - Go to your repository Settings > Pages
+   - Select "Deploy from a branch"
+   - Choose `main` branch and `/dist` folder
+   - Your site will be available at `https://yourusername.github.io/repository-name`
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Custom Domain** (optional):
+   - Add a `CNAME` file to the `public` folder with your domain
+   - Configure DNS records with your domain provider
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🔧 Local Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## 📱 Integration Points
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The site includes placeholder sections for:
 
-**Use GitHub Codespaces**
+- **Calendly Booking**: Embed code ready for `/schedule` page
+- **Zoho Bookings**: Alternative booking system integration
+- **Newsletter Signup**: Formspree/Mailchimp embed slots in footer
+- **Social Media**: Instagram, Facebook links ready for configuration
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎬 Video Setup
 
-## What technologies are used for this project?
+For the hero video:
+1. Add your video file as `/public/hero.mp4` (16:9 aspect ratio recommended)
+2. The hero poster image is already included at `/public/hero-poster.jpg`
+3. Video should be 8-12 seconds, silent, and compressed to ~3-5MB for best performance
 
-This project is built with:
+## 🔍 SEO Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Complete meta tags with Temple Pilates branding
+- Open Graph and Twitter card support
+- JSON-LD structured data for local business
+- Sitemap.xml and robots.txt included
+- Semantic HTML with proper heading hierarchy
 
-## How can I deploy this project?
+## 🎯 Accessibility
 
-Simply open [Lovable](https://lovable.dev/projects/e52668e3-90fd-48aa-8bf4-a161b821e953) and click on Share -> Publish.
+- WCAG AA compliant color contrast
+- Proper heading hierarchy (H1-H6)
+- Descriptive alt text for images
+- Keyboard navigation support
+- Focus indicators
+- Reduced motion preferences respected
 
-## Can I connect a custom domain to my Lovable project?
+## 📦 Tech Stack
 
-Yes, you can!
+- **React** - Component-based UI framework
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Fast build tool and dev server
+- **React Router** - Client-side routing
+- **Lucide React** - Beautiful icon library
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🌿 Brand Values
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Temple Pilates centers:
+- Women-forward wellness
+- AAPI-inclusive community
+- Accessible design for all bodies
+- Modern sanctuary aesthetic
+- Authentic wellness practices
+
+Built with care for the Temple Pilates community. 🧘‍♀️✨
