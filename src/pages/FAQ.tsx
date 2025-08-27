@@ -46,14 +46,9 @@ const FAQ = () => {
       answer: "Yes! We regularly host pop-up events featuring local AAPI and women-owned wellness brands, seasonal intention-setting workshops, and community celebrations. Follow us on social media or ask at the front desk for upcoming events."
     },
     {
-      id: "fragrance-policy",
-      question: "What's your fragrance policy?",
-      answer: "We maintain a fragrance-light environment to accommodate chemical sensitivities and ensure everyone can breathe comfortably. We kindly ask that you avoid wearing strong perfumes, colognes, or scented products to class."
-    },
-    {
-      id: "accessibility",
-      question: "Is your studio accessible?",
-      answer: "Yes! Our studio features accessible pathways, and our instructors are trained to provide modifications for different abilities and mobility levels. If you have specific accessibility needs, please contact us in advance so we can ensure your comfort."
+      id: "showers-changing-rooms",
+      question: "Do you have showers or changing rooms?",
+      answer: "We do not currently offer showers or full changing rooms at our studio. We have a small area for storing personal items and light changes, but recommend arriving ready to move. Many of our community members enjoy the post-class glow and head to nearby coffee shops!"
     },
     {
       id: "inclusivity",
@@ -74,7 +69,7 @@ const FAQ = () => {
         <div className="container text-center">
           <h1 className="text-5xl font-bold mb-6">Frequently Asked Questions</h1>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto mb-8">
-            Everything you need to know about practicing at Temple Pilates. 
+            Everything you need to know about practicing at Tempo Pilates. 
             Your questions help us create a more welcoming space for everyone.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
@@ -158,10 +153,10 @@ const FAQ = () => {
                   Have a specific question? We'd love to hear from you and help however we can.
                 </p>
                 <a 
-                  href="mailto:hello@templepilates.com"
+                  href="mailto:hello@tempopilates.com"
                   className="text-primary hover:text-accent transition-colors font-medium"
                 >
-                  hello@templepilates.com →
+                  hello@tempopilates.com →
                 </a>
               </CardContent>
             </Card>

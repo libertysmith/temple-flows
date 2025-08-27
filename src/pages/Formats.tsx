@@ -198,6 +198,111 @@ const Formats = () => {
         </div>
       </section>
 
+      {/* Signature Class Formats */}
+      <section className="section">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-6">Signature Class Formats</h2>
+            <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
+              Discover our specially curated class experiences, each designed to take you on 
+              a unique journey through movement and sound.
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Pilates Formats */}
+            <div>
+              <h3 className="text-2xl font-bold mb-8 text-center">Pilates Experiences</h3>
+              <div className="space-y-6">
+                <Card className="bg-background/50 border-accent/20">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold mb-3 text-primary">Seoul Flow</h4>
+                    <p className="text-foreground/80 mb-2">
+                      Empowering K-POP playlists that boost energy and confidence with infectious rhythms 
+                      and powerful vocals to fuel your strongest practice.
+                    </p>
+                    <p className="text-sm text-foreground/60 italic">
+                      Feel unstoppable with every beat
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-background/50 border-accent/20">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold mb-3 text-primary">Tokyo Drive</h4>
+                    <p className="text-foreground/80 mb-2">
+                      Energizing J-POP playlists that boost motivation with uplifting melodies 
+                      and dynamic beats to propel you through challenging flows.
+                    </p>
+                    <p className="text-sm text-foreground/60 italic">
+                      Pure motivation in musical form
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-background/50 border-accent/20">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold mb-3 text-primary">Cultural Fusion</h4>
+                    <p className="text-foreground/80 mb-2">
+                      Monthly rotating celebration of global sounds - from Latin House to Afrobeats, 
+                      honoring diverse musical traditions while you move.
+                    </p>
+                    <p className="text-sm text-foreground/60 italic">
+                      A musical journey around the world
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+            
+            {/* Yoga Formats */}
+            <div>
+              <h3 className="text-2xl font-bold mb-8 text-center">Yoga Journeys</h3>
+              <div className="space-y-6">
+                <Card className="bg-background/50 border-accent/20">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold mb-3 text-primary">Guzheng Flow</h4>
+                    <p className="text-foreground/80 mb-2">
+                      Ancient Chinese string melodies create balanced energy, harmonizing mind and body 
+                      with elegant traditional sounds that ground and center.
+                    </p>
+                    <p className="text-sm text-foreground/60 italic">
+                      Find perfect equilibrium
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-background/50 border-accent/20">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold mb-3 text-primary">Crystal Sanctuary</h4>
+                    <p className="text-foreground/80 mb-2">
+                      Tibetan sound healing with crystal singing bowls melts away anxiety and stress, 
+                      creating deep nervous system restoration through sacred vibrations.
+                    </p>
+                    <p className="text-sm text-foreground/60 italic">
+                      Pure healing resonance
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-background/50 border-accent/20">
+                  <CardContent className="p-6">
+                    <h4 className="text-lg font-semibold mb-3 text-primary">Zen Garden</h4>
+                    <p className="text-foreground/80 mb-2">
+                      Asian instrumental and nature soundscapes transport you to tranquil meditation spaces, 
+                      dissolving mental chatter and cultivating profound inner stillness.
+                    </p>
+                    <p className="text-sm text-foreground/60 italic">
+                      Mental clarity through sacred silence
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section">
         <div className="container text-center">

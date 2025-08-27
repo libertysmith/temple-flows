@@ -31,7 +31,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="section bg-secondary/20">
         <div className="container text-center">
-          <h1 className="text-5xl font-bold mb-6">About Temple Pilates</h1>
+          <h1 className="text-5xl font-bold mb-6">About Tempo Pilates</h1>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto mb-8">
             A modern sanctuary for movement, community, and authentic wellness. 
             Created by women, for all bodies seeking belonging.
@@ -51,7 +51,7 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <div className="space-y-6 text-foreground/80">
                 <p>
-                  Temple Pilates was born from a simple belief: movement should feel like medicine, 
+                  Tempo Pilates was born from a simple belief: movement should feel like medicine, 
                   and wellness spaces should welcome every body and every story.
                 </p>
                 <p>
@@ -92,9 +92,9 @@ const About = () => {
               </Card>
               <Card className="bg-secondary/30 border-accent/20 p-6">
                 <Sparkles className="h-8 w-8 text-primary mb-3" />
-                <h4 className="font-semibold mb-2">Accessible Wellness</h4>
+                <h4 className="font-semibold mb-2">Physical Fitness</h4>
                 <p className="text-sm text-foreground/80">
-                  Modifications and clear pathways welcome every body and ability level.
+                  Build strength, flexibility, and endurance through our dynamic movement practices.
                 </p>
               </Card>
             </div>
@@ -193,7 +193,7 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-6">Lounge & Events</h2>
               <div className="space-y-6 text-foreground/80">
                 <p>
-                  Beyond movement, Temple Pilates is a community hub. Our thoughtfully designed 
+                  Beyond movement, Tempo Pilates is a community hub. Our thoughtfully designed 
                   lounge space encourages connection and celebrates the local wellness ecosystem.
                 </p>
                 <p>

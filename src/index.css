@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Temple Pilates Design System - Modern Sanctuary Aesthetic */
+/* Tempo Pilates Design System - Modern Sanctuary Aesthetic */
 
 @layer base {
   :root {
-    /* Temple Pilates Brand Palette */
+    /* Tempo Pilates Brand Palette */
     --color-primary: 45 71% 91%;           /* #FAF3DD - base backgrounds */
     --color-secondary: 349 23% 73%;        /* #D7BDBE - section panels */
     --color-ink: 330 8% 38%;              /* #615055 - headings/body text */

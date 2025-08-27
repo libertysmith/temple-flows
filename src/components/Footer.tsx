@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Brand */}
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-xl font-bold mb-4">Temple Pilates</h3>
+              <h3 className="text-xl font-bold mb-4">Tempo Pilates</h3>
               <p className="text-foreground/80 mb-6 max-w-md">
                 A modern sanctuary for movement. Beat-driven Pilates and breath-led Yoga 
                 designed to lift your energy and quiet your mind.
@@ -63,7 +63,7 @@ const Footer = () => {
 
         <div className="border-t border-accent/20 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-foreground/60">
-            <p>&copy; 2024 Temple Pilates. All rights reserved.</p>
+            <p>&copy; 2025 Tempo Pilates. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 sm:mt-0">
               <a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a>
               <a href="/terms" className="hover:text-primary transition-colors">Terms of Service</a>
