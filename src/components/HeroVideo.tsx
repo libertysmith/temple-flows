@@ -1,6 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
+// Build paths that automatically include the GitHub Pages base (/temple-flows/)
+const videoSrc  = new URL('/assets/hero.mp4', import.meta.env.BASE_URL).toString();
+const posterSrc = new URL('/assets/img/hero-poster.jpg', import.meta.env.BASE_URL).toString(); // optional
+
 const HeroVideo = () => {
   return (
     <section className="hero hero--video">
@@ -12,10 +16,9 @@ const HeroVideo = () => {
           loop
           playsInline
           preload="metadata"
-          poster="/hero-poster.jpg"
           aria-hidden="true"
         >
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src={videoSrc} type="video/mp4" />
         </video>
         <div className="hero__overlay"></div>
       </div>
