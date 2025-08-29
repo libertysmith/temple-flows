@@ -7,35 +7,110 @@
    ================================ */
 :root {
   /* Hex (reference) */
-  --hex-primary: #FAF3DD;     /* base */
-  --hex-secondary: #D7BDBE;   /* supporting surface */
-  --hex-ink: #615055;         /* text */
-  --hex-accent-green: #62A87C;/* primary action */
-  --hex-accent-gold: #BFA35A; /* gold accent (exact from palette) */
+  --hex-primary: #FAF3DD;      /* cream base */
+  --hex-secondary: #D7BDBE;    /* soft rose surface */
+  --hex-ink: #615055;          /* text */
+  --hex-accent-green: #62A87C; /* buttons/links */
+  --hex-accent-gold: #DDB72C;  /* updated gold */
 
-  /* RGB components (for alpha-aware color functions) */
-  --primary: 250 243 221;     /* #FAF3DD */
-  --secondary: 215 189 190;   /* #D7BDBE */
-  --ink: 97 80 85;            /* #615055 */
-  --accent-green: 98 168 124; /* #62A87C */
-  --accent-gold: 191 163 90;  /* #BFA35A */
+  /* RGB components (kept for custom rules that use rgb()) */
+  --brand-primary-rgb: 250 243 221;     /* #FAF3DD */
+  --brand-secondary-rgb: 215 189 190;   /* #D7BDBE */
+  --brand-ink-rgb: 97 80 85;            /* #615055 */
+  --brand-green-rgb: 98 168 124;        /* #62A87C */
+  --brand-gold-rgb: 221 183 44;         /* #DDB72C */
+
+  /* HSL components for Tailwind utilities (these are what tailwind.config.js uses)
+     Format: H S% L% (no commas) */
+  --background: 45.52 74.36% 92.35%;            /* #FAF3DD */
+  --foreground: 342.35 9.6% 34.71%;             /* #615055 */
+
+  --primary: 142.29 28.69% 52.16%;              /* green */
+  --primary-foreground: 45.52 74.36% 92.35%;    /* cream text on green */
+
+  --secondary: 357.69 24.53% 79.22%;            /* soft rose */
+  --secondary-foreground: 342.35 9.6% 34.71%;   /* ink */
+
+  --accent: 142.29 28.69% 52.16%;               /* map accent → green */
+  --accent-foreground: 45.52 74.36% 92.35%;     /* cream on accent */
+
+  --muted: 357.69 20% 88%;                      /* lighter rose */
+  --muted-foreground: 342.35 9.6% 34.71%;       /* ink */
+
+  --destructive: 0 72% 51%;                     /* red (system default) */
+  --destructive-foreground: 0 0% 98%;           /* near-white */
+
+  --popover: 45.52 74.36% 92.35%;               /* same as background */
+  --popover-foreground: 342.35 9.6% 34.71%;
+
+  --card: 45.52 74.36% 92.35%;
+  --card-foreground: 342.35 9.6% 34.71%;
+
+  /* System tokens used by tailwind.config.js */
+  --border: 357.69 24% 80%;
+  --input: 357.69 24% 80%;
+  --ring: 47.12 72.24% 51.96%;                   /* gold focus ring */
+
+  /* Sidebar (if ever used) */
+  --sidebar-background: var(--background);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: 47.12 72.24% 51.96%;         /* gold */
+  --sidebar-accent-foreground: 45.52 74.36% 92.35%;
+  --sidebar-border: 357.69 24% 80%;
+  --sidebar-ring: 47.12 72.24% 51.96%;
+
+  /* Radius used by tailwind.config.js borderRadius */
+  --radius: 0.75rem;
 
   /* Layout scales */
   --section-padding: clamp(3rem, 6vw, 5rem);
 
-  /* Hero overlay gradient */
+  /* Hero overlay gradient (use HSL variables so the two systems align) */
   --hero-overlay: linear-gradient(
     180deg,
-    rgb(var(--primary) / 0.55) 0%,
-    rgb(var(--secondary) / 0.45) 100%
+    hsl(var(--background) / 0.55) 0%,
+    hsl(var(--secondary) / 0.45) 100%
   );
 
   /* Optional section gradient */
   --section-gradient: linear-gradient(
     180deg,
-    rgb(var(--primary)) 0%,
-    rgb(var(--secondary) / 0.25) 100%
+    hsl(var(--background)) 0%,
+    hsl(var(--secondary) / 0.25) 100%
   );
+}
+
+/* Optional dark theme stub (keeps same palette for now) */
+.dark {
+  --background: 45.52 74.36% 12%;
+  --foreground: 45.52 74.36% 92%;
+  --card: var(--background);
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --primary: 142.29 28.69% 52.16%;
+  --primary-foreground: 45.52 74.36% 92.35%;
+  --secondary: 357.69 24.53% 25%;
+  --secondary-foreground: 45.52 74.36% 92.35%;
+  --muted: 357.69 24% 20%;
+  --muted-foreground: 45.52 74.36% 92%;
+  --accent: 142.29 28.69% 52.16%;
+  --accent-foreground: 45.52 74.36% 92.35%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 357.69 24% 25%;
+  --input: 357.69 24% 25%;
+  --ring: 47.12 72.24% 51.96%;
+  --sidebar-background: var(--background);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: 47.12 72.24% 51.96%;
+  --sidebar-accent-foreground: 45.52 74.36% 92.35%;
+  --sidebar-border: 357.69 24% 25%;
+  --sidebar-ring: 47.12 72.24% 51.96%;
 }
 
 /* ================================
@@ -44,53 +119,51 @@
 html, body { height: 100%; }
 body {
   margin: 0;
-  color: rgb(var(--ink));
-  background: rgb(var(--primary));
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
 }
 
-/* Focus styles */
+/* Focus styles (use updated gold) */
 :focus-visible {
-  outline: 2px solid rgb(var(--accent-gold));
+  outline: 2px solid hsl(47.12 72.24% 51.96%);
   outline-offset: 2px;
 }
 
-/* Links */
-a { color: rgb(var(--accent-green)); }
+/* Links use the accent (green) */
+a { color: hsl(var(--accent)); }
 a:hover { filter: brightness(0.92); }
 
 /* ================================
-   Buttons
+   Buttons (custom classes)
    ================================ */
 .btn-primary-brand {
   @apply inline-flex items-center justify-center rounded-md px-5 py-3 text-base font-medium;
-  background: rgb(var(--accent-green));
-  color: #FAF3DD;
-  border: 1px solid rgb(var(--accent-green));
+  background: hsl(var(--accent));                         /* green */
+  color: hsl(var(--primary-foreground));                  /* cream */
+  border: 1px solid hsl(var(--accent));
   transition: filter .2s ease, box-shadow .2s ease, outline-color .2s ease;
 }
-.btn-primary-brand:hover { filter: brightness(0.93); outline: 1px solid rgb(var(--accent-gold)); }
+.btn-primary-brand:hover {
+  filter: brightness(0.93);
+  outline: 1px solid hsl(47.12 72.24% 51.96%);            /* gold */
+}
 
 .btn-outline-brand {
   @apply inline-flex items-center justify-center rounded-md px-5 py-3 text-base font-medium;
   background: transparent;
-  color: rgb(var(--ink));
-  border: 1px solid rgb(var(--secondary));
+  color: hsl(var(--foreground));                           /* ink */
+  border: 1px solid hsl(var(--secondary));                 /* soft rose border */
   transition: border-color .2s ease, color .2s ease;
 }
-.btn-outline-brand:hover { border-color: rgb(var(--accent-gold)); }
+.btn-outline-brand:hover { border-color: hsl(47.12 72.24% 51.96%); }
 
 /* ================================
    Hero video
    ================================ */
-.hero {
-  @apply relative;
-  color: rgb(var(--ink));
-}
+.hero { @apply relative; color: hsl(var(--foreground)); }
 
-.hero__media {
-  @apply relative w-full;
-}
+.hero__media { @apply relative w-full; }
 
 /* Layout stability while video initializes */
 .hero__media::before {
@@ -126,12 +199,10 @@ a:hover { filter: brightness(0.92); }
   .hero__content { padding-block: 8rem; }
 }
 
-/* Reduced motion / fallback image (Pages base path) */
+/* Reduced motion: simple brand base (no poster required) */
 @media (prefers-reduced-motion: reduce) {
   .hero__video { display: none; }
-  .hero__media {
-    background: url('/temple-flows/assets/img/hero-poster.jpg') center/cover no-repeat;
-  }
+  .hero__media { background: hsl(var(--background)); }
 }
 
 /* ================================
@@ -139,21 +210,18 @@ a:hover { filter: brightness(0.92); }
    ================================ */
 .lead {
   @apply text-xl;
-  color: rgb(var(--ink) / 0.8);
+  color: hsl(var(--foreground) / 0.8);
 }
-
-.display-5 {
-  @apply text-4xl md:text-5xl font-semibold;
-}
+.display-5 { @apply text-4xl md:text-5xl font-semibold; }
 
 /* ================================
    Tags / Pills
    ================================ */
 .tag {
   @apply inline-block px-4 py-2 rounded-full text-sm;
-  background: rgb(var(--accent-gold) / 0.2);
-  color: rgb(var(--ink));
-  border: 1px solid rgb(var(--accent-gold) / 0.3);
+  background: hsl(47.12 72.24% 51.96% / 0.18);        /* gold tint */
+  color: hsl(var(--foreground));
+  border: 1px solid hsl(47.12 72.24% 51.96% / 0.35);
 }
 
 /* ================================
@@ -165,7 +233,6 @@ a:hover { filter: brightness(0.92); }
 /* ================================
    Nav (optional minimal)
    ================================ */
-.nav-link { @apply px-3 py-2; color: rgb(var(--ink)); }
-.nav-link[aria-current="page"] { box-shadow: inset 0 -2px 0 0 rgb(var(--accent-gold)); }
-
+.nav-link { @apply px-3 py-2; color: hsl(var(--foreground)); }
+.nav-link[aria-current="page"] { box-shadow: inset 0 -2px 0 0 hsl(47.12 72.24% 51.96%); }
 
