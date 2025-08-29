@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
-// Build paths that automatically include the GitHub Pages base (/temple-flows/)
-const videoSrc  = new URL('/assets/hero.mp4', import.meta.env.BASE_URL).toString();
-const posterSrc = new URL('/assets/img/hero-poster.jpg', import.meta.env.BASE_URL).toString(); // optional
+// Vite will prepend the correct base path (e.g., /temple-flows/) at build time.
+const videoSrc = `${import.meta.env.BASE_URL}assets/hero.mp4`;
+const posterSrc = `${import.meta.env.BASE_URL}assets/img/hero-poster.jpg`; // optional
 
 const HeroVideo = () => {
   return (
@@ -16,6 +16,7 @@ const HeroVideo = () => {
           loop
           playsInline
           preload="metadata"
+          poster={posterSrc}         // remove if you don't want a poster
           aria-hidden="true"
         >
           <source src={videoSrc} type="video/mp4" />
