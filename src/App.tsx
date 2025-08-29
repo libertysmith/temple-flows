@@ -18,7 +18,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* GitHub Pages subpath */}
+      <BrowserRouter basename="/temple-flows">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/membership" element={<Membership />} />
